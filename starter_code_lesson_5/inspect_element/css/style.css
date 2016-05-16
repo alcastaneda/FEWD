@@ -1,0 +1,19 @@
+h1 {
+	color: pink;
+	font-family: 'Abril Fatface', serif;
+	letter-spacing: 3px;
+	font-size: 50px;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+}
+
+li {
+	margin-bottom: 20px;
+	background-color: #FEDB0D;
+	padding: 15px;
+
+}
