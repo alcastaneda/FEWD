@@ -1,0 +1,12 @@
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div{
+  background-color: blue;
+}
+p{
+  float: left;
+}
