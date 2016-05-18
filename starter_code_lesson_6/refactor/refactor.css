@@ -1,0 +1,184 @@
+/*----------------------------------------------------------------
+  REMOVE INLINE STYLES
+------------------------------------------------------------------*/
+
+/*
+  IN HTML: <p style="width: 150px"></p>
+*/
+
+
+/*-- REFACTORED: --*/
+
+p {
+  width: 150px;
+}
+
+
+
+/*----------------------------------------------------------------
+  COMBINE MULTIPLES
+------------------------------------------------------------------*/
+.buttons-wrapper {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 4px;
+  background: orange;
+}
+
+.buttons-wrapper > form {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+/*-- REFACTORED: --*/
+
+.buttons-wrapper, .buttons-wrapper > form {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.buttons-wrapper {
+  background: orange;
+}
+
+/*----------------------------------------------------------------
+  Ask yourself: Where else do I have to change this?
+------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------
+  RENAME CLASSES/IDS FOR READABILITY
+------------------------------------------------------------------*/
+#img1 {
+  margin-top: 50px;
+}
+
+/*-- REFACTORED: --*/
+
+#image-to-vote-on {
+  margin-top: 50px;
+}
+
+
+
+/*----------------------------------------------------------------
+  ORGANIZE CSS
+------------------------------------------------------------------*/
+.list-item {
+  width: 200px;
+}
+
+#container > .col {
+  width: 50%;
+}
+
+footer {
+  text-align: right;
+}
+
+a:hover {
+  color: purple;
+}
+
+header > ol {
+  list-style: none;
+}
+
+body {
+  background-image: url(../images/anImage.png);
+}
+
+#navigation-wrapper {
+  float: left;
+}
+
+a {
+  color: red;
+}
+
+header {
+  height: 80px;
+}
+
+#container > img {
+  border: 1px solid red;
+}
+
+footer > #company-name {
+  font-weight: bold;
+}
+
+/*-- REFACTORED: --*/
+
+/* --- Global ---- */
+body {
+  background-image: url(../images/anImage.png);
+}
+
+a {
+  color: red;
+}
+
+a:hover {
+  color: purple;
+}
+
+
+/* --- Header ---- */
+header {
+  height: 80px;
+}
+
+header > ol {
+  list-style: none;
+}
+
+.list-item {
+  width: 200px;
+}
+
+#navigation-wrapper {
+  float: left;
+}
+
+/* --- Container ---- */
+#container > img {
+  border: 1px solid red;
+}
+
+#container > .col {
+  width: 50%;
+}
+
+/* --- Footer ---- */
+footer {
+  text-align: right;
+}
+
+footer > #company-name {
+  font-weight: bold;
+}
+
+
+/*----------------------------------------------------------------
+  REMOVE UNNECESSARY CSS
+------------------------------------------------------------------*/
+#myDiv {
+  margin: 10px 0px 0px 20px;
+}
+
+div {
+  width: 100%;
+}
+
+/*-- REFACTORED: --*/
+
+#myDiv {
+  margin: 10px 0 0 20px;
+}
