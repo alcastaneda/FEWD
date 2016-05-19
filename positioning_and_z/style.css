@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+
+/*HEADER STYLING*/
+h1{
+  padding-top: 50px;
+}
+
+/*NAV STYLING*/
+nav{
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+nav p, ul{
+  width: 49%;
+  display: inline-block;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+}
+
+/*SECTION STYLING*/
+div{
+  position: relative;
+}
+
+div p{
+  position: absolute;
+  top: 50px;
+  color: red;
+}

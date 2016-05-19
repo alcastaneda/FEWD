@@ -63,13 +63,16 @@ img {
   height: 300px;
   background-color: rgba(0, 0, 0, .3);
   position: absolute;
-  top: 50px;
+  top: 101px;
 }
 
 /* Fixed */
 header {
   background-color: #ccc;
   border-bottom: 2px solid #bbb;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 
 
