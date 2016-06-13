@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Cash Register</title> 
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+  <div class="register">
+
+    <div class="ticket clearfix">
+      <h1>Thank You!</h1>
+
+      <!-- This is where we will add entries (each entry will be a li) -->
+      <ul id="entries">
+      </ul>
+
+      <!-- This is where we'll keep track of the running total -->
+      <div class="total-amount clearfix">
+        <h3>Total</h3>
+        <p id="total">0</p>
+      </div>
+
+    </div>
+    
+    <!-- Here are the elements where the user will input a value and hit "Enter Amount" to submit. -->
+    <div class="entry-form">
+      <input id="newEntry" type="text" autocomplete="off" placeholder="How Much?">
+      <button id="submit" type="button">Enter Amount</button>
+    </div>
+
+
+  </div>
+
+  <script src="js/jquery-2.1.3.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
