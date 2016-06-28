@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Elements</title>
+
+	<style>
+		body {
+			line-height: 2em;
+		}
+
+		input[type="submit"] {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	
+	<form action="" method="post">
+		<label for="fullName">Full Name</label>
+		<input type="text" name="fullName" id="fullName" placeholder="Full Name">
+
+		<br>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" placeholder="Email">
+
+		<br>
+
+		<label for="referralType">Who referred you to our company?</label>
+		<select name="referralType" id="referralType">
+			<option value="friend">Friend</option>
+			<option value="coworker">Coworker</option>
+		</select>
+		
+		<br>
+		<input type="checkbox" name="pizzaParty" id="pizzaParty">
+		<label for="pizzaParty">Do you want a pizza party?</label>
+
+		<br>
+		<label>What would you like to drink?</label>
+		<br>
+		<input type="radio" name="drinkChoice" id="coffee" value="coffee" checked="checked">
+		<label for="coffee">Coffee</label>
+
+		<input type="radio" name="drinkChoice" id="tea" value="tea" >
+		<label for="tea">Tea</label>
+		
+		<input type="radio" name="drinkChoice" id="juice" value="juice">
+		<label for="juice">Juice</label>
+
+		<br>
+
+		<input type="submit" value="Submit Form">
+
+
+	</form>
+	
+</body>
+</html>

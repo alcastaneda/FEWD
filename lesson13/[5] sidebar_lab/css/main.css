@@ -1,0 +1,110 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #555;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.hamburger{
+  width: 2.5rem;
+  float: left;
+  margin: 2em;
+  position: fixed;
+}
+
+.line{
+  width: 2.5rem;
+  height: .3125rem;
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  border-radius: 2.5rem;
+  margin-bottom: .52em;
+  opacity: 1;
+  /* 1. Set the transition property on the .line class */
+  transition: all 1s ease;
+}
+
+/* Second line */
+.active .line:nth-child(2) {
+  /* 2. When the active class is added to the .hamburger-icon, fade the middle line out (hint: you can use the 'opacity' property). */
+  opacity: 0;
+ }
+
+/* Top line */
+.active .line:first-child {
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+}
+
+/* Bottom line */
+.active .line:last-child {
+  transform: rotate(-45deg);
+  transform-origin: 0 5px;
+}
+
+
+h2 {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  margin: 2.5em 0 1em;
+}
+
+.sidebar{
+  display: none;
+  background-color: #0099CC;
+  padding: 2.5em 0 1em;
+  height: 100%;
+  float: left;
+  padding: 5em 2em;
+}
+
+ul{
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.content{
+  display: inline-block;
+  width: 80%;
+  margin-left: 1em;
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+.active-sidebar{
+  display: inline-block;
+  animation: slide 1s linear;
+}
+
+
